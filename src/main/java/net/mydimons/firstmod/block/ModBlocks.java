@@ -46,7 +46,7 @@ public class ModBlocks {
 
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(7f)
+                    .strength(12f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.DARK_RED)));
@@ -71,11 +71,14 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
 
-            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_ORE);
-            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.COMPRESSED_REDSTONE_BLOCK);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_ORE);
+            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
         });
     }
 }
