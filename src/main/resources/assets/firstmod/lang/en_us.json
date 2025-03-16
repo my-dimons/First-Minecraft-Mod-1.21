@@ -1,0 +1,14 @@
+{
+  "item.firstmod.pink_garnet": "Pink Garnet",
+  "item.firstmod.raw_pink_garnet": "Raw Pink Garnet",
+  "item.firstmod.banana": "Banana",
+  "item.firstmod.green_apple": "Green Apple",
+
+  "block.firstmod.pink_garnet_block": "Block of Pink Garnet",
+  "block.firstmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+  "block.firstmod.compressed_redstone_block": "Block of Compressed Redstone",
+
+  "itemgroup.firstmod.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.firstmod.pink_garnet_blocks": "Pink Garnet Blocks",
+  "itemgroup.firstmod.new_foods": "New Food"
+}

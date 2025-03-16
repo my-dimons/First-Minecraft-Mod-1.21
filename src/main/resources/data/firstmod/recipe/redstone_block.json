@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "firstmod:compressed_redstone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:redstone_block"
+  }
+}

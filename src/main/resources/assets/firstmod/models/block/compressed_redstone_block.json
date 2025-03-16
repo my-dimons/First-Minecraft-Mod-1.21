@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "firstmod:block/compressed_redstone_block"
+  }
+}
