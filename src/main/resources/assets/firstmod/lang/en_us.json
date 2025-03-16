@@ -8,6 +8,9 @@
   "block.firstmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.firstmod.compressed_redstone_block": "Block of Compressed Redstone",
 
+  "block.firstmod.pink_garnet_ore": "Pink Garnet Ore",
+  "block.firstmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+
   "itemgroup.firstmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.firstmod.pink_garnet_blocks": "Pink Garnet Blocks",
   "itemgroup.firstmod.new_foods": "New Food"

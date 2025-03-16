@@ -3,6 +3,7 @@ package net.mydimons.firstmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.mydimons.firstmod.FirstMod;
 
 public class ModBlocks {
@@ -28,6 +30,20 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)
                     .mapColor(MapColor.MAGENTA)));
+
+    public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(100, 500),
+                    AbstractBlock.Settings.create()
+                            .strength(3f)
+                            .requiresTool()));
+    public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(100, 500),
+                    AbstractBlock.Settings.create()
+                            .strength(3.5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
+
+
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(7f)
@@ -54,6 +70,9 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+
+            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_ORE);
+            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.COMPRESSED_REDSTONE_BLOCK);
