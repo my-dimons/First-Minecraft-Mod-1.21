@@ -7,6 +7,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.mydimons.firstmod.FirstMod;
+import net.mydimons.firstmod.item.custom.ChiselItem;
+import net.mydimons.firstmod.item.custom.WateringCanItem;
 
 public class ModItems {
     // ITEMS
@@ -14,6 +16,9 @@ public class ModItems {
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
     public static final Item BANANA = registerItem("banana", new Item(new Item.Settings()));
     public static final Item GREEN_APPLE = registerItem("green_apple", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(100)));
+    public static final Item WATERING_CAN = registerItem("watering_can", new WateringCanItem(new Item.Settings().maxDamage(60)));
 
     // REGISTER
     private static Item registerItem(String name, Item item) {

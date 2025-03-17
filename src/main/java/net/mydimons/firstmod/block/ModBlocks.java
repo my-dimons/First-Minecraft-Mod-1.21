@@ -43,7 +43,6 @@ public class ModBlocks {
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)));
 
-
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(12f)
